@@ -1,0 +1,85 @@
+# ===========================================
+# WordPress wp-content .gitignore
+# ===========================================
+
+# ----- OS & Editor -----
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# ----- WordPress Generated Files -----
+# Debug log
+debug.log
+*.log
+
+# Uploads directory (user-uploaded media files)
+uploads/
+
+# Cache directories
+cache/
+*/cache/
+advanced-cache.php
+object-cache.php
+w3tc-config/
+
+# Backup files
+*.bak
+*.backup
+*-backup-*
+backups/
+backup/
+
+# Upgrade directories
+upgrade/
+upgrade-temp-backup/
+
+# ----- Plugins to Exclude -----
+# Large plugins or plugins with sensitive data
+# plugins/akismet/  # Uncomment if not tracking
+
+# ----- Themes to Exclude -----
+# Default themes (can be reinstalled easily)
+# themes/twentytwenty/
+# themes/twentytwentyone/
+# themes/twentytwentytwo/
+# themes/twentytwentythree/
+# themes/twentytwentyfour/
+# themes/twentytwentyfive/
+
+# ----- Development & Build -----
+node_modules/
+vendor/
+*.map
+.sass-cache/
+.npm/
+.yarn/
+
+# ----- Security -----
+# Config files that might contain sensitive data
+*.sql
+*.sql.gz
+.env
+.env.*
+wp-config.php
+php.ini
+.htaccess
+.htpasswd
+
+# ----- Temporary Files -----
+tmp/
+temp/
+*.tmp
+
+# ----- Query Monitor -----
+# db.php is a symlink created by Query Monitor plugin
+db.php
+
+# ----- SiteGuard -----
+# SiteGuard plugin stores login history in database, but may have local files
+siteguard/*.log
