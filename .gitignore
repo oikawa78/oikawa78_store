@@ -79,6 +79,8 @@ temp/
 # ----- Query Monitor -----
 # db.php is a symlink created by Query Monitor plugin
 db.php
+# DB.php is dynamically generated on server
+plugins/query-monitor/classes/DB.php
 
 # ----- SiteGuard -----
 # SiteGuard plugin stores login history in database, but may have local files
